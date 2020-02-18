@@ -5,7 +5,17 @@ public class Node {
 	Node noFilho;
 	String id;
 	
-	public boolean adicionarPai(Node pai) { 
+	public Node() {
+	}
+	
+	public Node(Node noPai, Node noFilho, String id) {
+		super();
+		this.noPai = noPai;
+		this.noFilho = noFilho;
+		this.id = id;
+	}
+	
+	public boolean adicionarPai(Node pai) {
 		noPai = pai; 
 		return true;
 	
