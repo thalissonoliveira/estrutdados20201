@@ -19,9 +19,12 @@ public class Somatorio {
 		}
 		return numero + somatorio(numero - 1);
 	}
-	//som(5) = 5 + som(4)
-	//som(4) = 4 + som(3)
-	//som(3) = 3 + som(2)
+	
+	//som(5) = 5 + som(4) = ? = 5 + 10 = 15
+	//som(4) = 4 + som(3) = ? = 4 + 6 = 10 
+	//som(3) = 3 + som(2) = ? = 3 + 3 = 6
+	//som(2) = 2 + som(1) = ? = 2 + 1 = 3
+	//som(1) = 1
 
 	public static void main(String[] args) {
 		System.out.println(new Somatorio().somatorio(5));
